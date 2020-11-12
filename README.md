@@ -43,3 +43,17 @@ Images from []()
 4. A team page which displays our management team members
 5. A subscribe page where potential clients can leave their information where they will be contacted
 6. An admin page which shows a list of our subscribers
+
+### Images used:
+Japan - https://unsplash.com/photos/E_eWwM29wfU (Su San Lee)
+Singapore- https://unsplash.com/photos/mfBFoA6l7DY (Yeo Khee)
+Seoul - https://www.pexels.com/photo/aerial-shot-of-city-1637788/ (Marius Mann)
+Italy - https://www.pexels.com/photo/orange-powerboat-between-medium-rise-buildings-208701/
+Germany - https://www.pexels.com/photo/architecture-boats-building-castle-547494/ (Kai Pilger)
+Switzerland - https://www.pexels.com/photo/photo-of-buildings-near-body-of-water-2779863/ (Nextvoyage)
+London - https://www.pexels.com/photo/london-night-lights-bridge-50632/ (Uncoated)
+Rome - https://www.pexels.com/photo/colosseum-rome-italy-2064827/ (Davi Pimentel)
+Greece - https://www.pexels.com/photo/lighted-buildings-nighttime-951539/ (Jimmy Teoh)
+San Francisco - https://unsplash.com/photos/gZXx8lKAb7Y (Maarten van den Heuvel)
+Caribbean - https://www.pexels.com/photo/beach-bungalow-caribbean-jetty-237272/ (Pixabay)
+Vietnam - https://www.pexels.com/photo/vietnam-halong-bay-58597/ (foc foodoncam)
