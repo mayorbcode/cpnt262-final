@@ -1,0 +1,127 @@
+// Dependencies/Modules
+const path = require('path');
+const express = require('express');
+const ejs = require('ejs');
+const mongoose = require('mongoose');
+require('dotenv').config();
+
+// Create express app
+const app = express();
+
+// Import models
+const Galleries = require('./models/gallery.js');
+const Subscribers = require('./models/subscriber.js');
+const Members = require('./models/member.js');
+
+// Set view engine
+app.set('view engine', 'ejs');
+
+// Express middleware to render static files
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Parse all requests for url encoded form data.
+app.use(express.urlencoded({ extended: true }));
+
+// Set up mongoose connection
+mongoose.connect(process.env.MONGODB_URL, { useUnifiedTopology: true,useNewUrlParser: true });
+
+var db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
+db.once('open', function() {
+  console.log('Connected to DB...');
+});
+
+
+// PAGES ENDPOINTS
+
+// Home/index page end-point
+app.get('/', (req, res) => {
+  res.render('pages/index');
+});
+
+// Gallery end-point
+app.get('/gallery', (req, res) => {
+  res.render('pages/gallery');
+});
+
+// Subscribe end-point
+app.get('/subscribe', (req, res) => {
+  res.render('pages/subscribe');
+});
+
+// Gallery-item end-point
+app.get('/gallery/:id', (req, res) => {
+  res.render('pages/gallery-item');
+});
+
+// Admin end-point
+app.get('/admin', (req, res) => {
+  res.render('pages/admin');
+});
+
+// Team end-point
+app.get('/team', (req, res) => {
+  res.render('pages/team');
+});
+
+
+// JSON ENDPOINTS
+
+// Gallery 
+app.get('/api/v0/gallery', (req, res) => {
+  Galleries.find((err, data) => {
+    if (err || data.length===0) {
+      res.send('Could not retrieve gallery');
+    }
+    else {
+      res.json(data);
+    }
+  });
+});
+
+// Subscribers
+app.get('/api/v0/subscribers', (req, res) => {
+  Subscribers.find((err, data) => {
+    if (err || data.length===0) {
+      res.send('Could not retrieve subscribers');
+    }
+    else {
+      res.json(data);
+      console.log(data);
+    }
+  });
+});
+
+// Members
+app.get('/api/v0/members', (req, res) => {
+  Members.find((err, data) => {
+    if (err || data.length===0) {
+      res.send('Could not retrieve members');
+    }
+    else {
+      res.json(data);
+    }
+  });
+});
+
+// Do something with form data
+app.post('/subscribers', (req, res) => {
+  res.send(`<p>Thanks, ${req.body.usersName}! We'll send copies of our newsletters to ${req.body.email}.</p>`);
+});
+
+// Return 404 when/if file is not found
+app.use(function(req, res) {
+  res.status(404);
+  res.send('404: File Not Found');
+});
+
+// Set PORT variable with 3000 fallback if local variable is not found
+const PORT = process.env.PORT || 3000;
+
+// Listen on PORT and console.log PORT value
+app.listen(PORT, function(){
+  console.log(`Listening on port ${PORT}`);
+});
+
