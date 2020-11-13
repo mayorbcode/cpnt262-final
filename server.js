@@ -48,7 +48,10 @@ app.get('/gallery', (req, res) => {
 
 // Subscribe end-point
 app.get('/subscribe', (req, res) => {
-  res.render('pages/subscribe');
+  res.render('pages/subscribe', {
+    title: "Subscribe - TOUR GUIDES", 
+    tagline: "Sign-up to our newsletter",
+    current: "subscribe"})
 });
 
 // Gallery-item end-point
@@ -63,7 +66,10 @@ app.get('/admin', (req, res) => {
 
 // Team end-point
 app.get('/team', (req, res) => {
-  res.render('pages/team');
+  res.render('pages/team', {
+    title: "Team - TOUR GUIDES", 
+    tagline: "Meet our team",
+    current: "team"})
 });
 
 
