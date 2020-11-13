@@ -53,7 +53,14 @@ app.get('/subscribe', (req, res) => {
 
 // Gallery-item end-point
 app.get('/gallery/:id', (req, res) => {
-  res.render('pages/gallery-item');
+  Galleries.find({id: req.params.id}, (err,data) => {
+    if (err || data.length===0) {
+      res.send('Could not find ID');
+    }
+    else {
+      res.render('pages/gallery-item');
+    }
+  });  
 });
 
 // Admin end-point
@@ -79,6 +86,20 @@ app.get('/api/v0/gallery', (req, res) => {
       res.json(data);
     }
   });
+});
+
+// Gallery item
+app.get('/api/v0/gallery/:id', (req, res) => {
+  Galleries.find({id: req.params.id}, (err,data) => {
+    if (err || data.length===0) {
+      res.send('Could not find ID');
+      console.log(err);
+    }
+    else {
+      console.log(data);
+      res.json(data);
+    }
+  });  
 });
 
 // Subscribers

@@ -2,7 +2,7 @@ const locations = [
   {
     id:           1,
     title:        'Caribbean',
-    description:  'String',
+    description:  'Image of the carribeans',
     imagePath:    'images/Caribbean.jpg'
   },
   {

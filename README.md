@@ -18,18 +18,21 @@ Images from []()
   - Manage Index + Admin pages and css  
   - Manage Server file  
   - Manage Database + corresponding models & seeds files  
+  - Nav partial  
 
 [Lynn Chen](https://github.com/yanlinchen1985)  
   - Project Theme  
-  - Manage contact + team pages and css  
+  - Manage Subscribe + team pages and css  
   - Frontend CSS and JS support
+  - Header Partial  
 
 [Nhat Nguyen](https://github.com/nhaatn)  
   - Project Theme  
-  - Project Images  
+  - Project Images and optimization  
   - Project Design/UI  
   - Manage Gallery + Gallery-item pages and css
   - Frontend Javascript Support  
+  - Footer Partial  
 
 ## Objectives
 &nbsp;&nbsp;The purpose of this project is to deploy a multi-page, database-driven Product website using Express, EJS and Mongoose. It will be deployed to Heroku and MondoDB Atlas.  
@@ -45,15 +48,16 @@ Images from []()
 6. An admin page which shows a list of our subscribers
 
 ### Images used:
-- Japan - https://unsplash.com/photos/E_eWwM29wfU (Su San Lee)
-- Singapore - https://unsplash.com/photos/mfBFoA6l7DY (Yeo Khee)
-- Seoul - https://www.pexels.com/photo/aerial-shot-of-city-1637788/ (Marius Mann)
-- Italy - https://www.pexels.com/photo/orange-powerboat-between-medium-rise-buildings-208701/
-- Germany - https://www.pexels.com/photo/architecture-boats-building-castle-547494/ (Kai Pilger)
-- Switzerland - https://www.pexels.com/photo/photo-of-buildings-near-body-of-water-2779863/ (Nextvoyage)
-- London - https://www.pexels.com/photo/london-night-lights-bridge-50632/ (Uncoated)
-- Rome - https://www.pexels.com/photo/colosseum-rome-italy-2064827/ (Davi Pimentel)
-- Greece - https://www.pexels.com/photo/lighted-buildings-nighttime-951539/ (Jimmy Teoh)
-- San Francisco - https://unsplash.com/photos/gZXx8lKAb7Y (Maarten van den Heuvel)
-- Caribbean - https://www.pexels.com/photo/beach-bungalow-caribbean-jetty-237272/ (Pixabay)
-- Vietnam - https://www.pexels.com/photo/vietnam-halong-bay-58597/ (foc foodoncam)
+- [Japan](https://unsplash.com/photos/E_eWwM29wfU) by [Su San Lee](https://unsplash.com/@blackodc) 
+- [Singapore](https://unsplash.com/photos/mfBFoA6l7DY) by [Yeo Khee](https://unsplash.com/@yokeboy)
+- [Seoul](https://www.pexels.com/photo/aerial-shot-of-city-1637788/) by [Marius Mann](https://www.pexels.com/@marius-mann-772581)  
+- [Italy](https://www.pexels.com/photo/orange-powerboat-between-medium-rise-buildings-208701/) by [Pixabay](https://www.pexels.com/@pixabay)
+- [Germany](https://www.pexels.com/photo/architecture-boats-building-castle-547494/) by [Kai Pilger](https://www.pexels.com/@kaip)
+- [Switzerland](https://www.pexels.com/photo/photo-of-buildings-near-body-of-water-2779863/) by [Nextvoyage](https://www.pexels.com/@nextvoyage)
+- [London](https://www.pexels.com/photo/london-night-lights-bridge-50632/) by [Uncoated](https://www.pexels.com/@uncoated)
+- [Rome](https://www.pexels.com/photo/colosseum-rome-italy-2064827/) by [Davi Pimentel](https://www.pexels.com/@davifnr)
+- [Greece](https://www.pexels.com/photo/lighted-buildings-nighttime-951539/) by [Jimmy Teoh](https://www.pexels.com/@jimmy-teoh-294331)
+- [San Francisco](https://unsplash.com/photos/gZXx8lKAb7Y) by [Maarten van den Heuvel](https://unsplash.com/@mvdheuvel)
+- [Caribbean](https://www.pexels.com/photo/beach-bungalow-caribbean-jetty-237272/) by [Pixabay](https://www.pexels.com/@pixabay)
+- [Vietnam](https://www.pexels.com/photo/vietnam-halong-bay-58597/) by [foc foodoncam](https://www.pexels.com/@foodoncam)
+- [Bora Bora](https://wallpaperaccess.com/bora-bora-windows) from [Wallpaper Access](https://wallpaperaccess.com/)

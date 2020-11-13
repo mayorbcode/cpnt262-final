@@ -23,7 +23,7 @@ fetch(`${window.location.origin}/api/v0/gallery`)
       `;
     });
     // Output to DOM
-    document.querySelector('.gallery').innerHTML = output;
+    document.querySelector('.gallery-item').innerHTML = output;
   })
   .catch((error) => {
     console.log('Oooooooops!');
