@@ -62,6 +62,7 @@ app.get('/gallery/:id', (req, res) => {
     }
     else {
       res.render('pages/gallery-item');
+      console.log(req);
     }
   });  
 });
