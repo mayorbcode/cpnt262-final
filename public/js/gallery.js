@@ -3,7 +3,7 @@
 
 
 // Asynchronous gallery fetch
-fetch(`${window.location.origin}/api/v0/gallery`)
+export const gallery = fetch(`${window.location.origin}/api/v0/gallery`)
   .then((response) => {
     // JSON returned from server
     // We need to convert it into a Javascript object

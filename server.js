@@ -38,12 +38,18 @@ db.once('open', function() {
 
 // Home/index page end-point
 app.get('/', (req, res) => {
-  res.render('pages/index');
+  res.render('pages/index', {
+    title: "Home", 
+    tagline: "Welcome to Tour Guides",
+    current: "pg-index"});
 });
 
 // Gallery end-point
 app.get('/gallery', (req, res) => {
-  res.render('pages/gallery');
+  res.render('pages/gallery', {
+    title: "Gallery", 
+    tagline: "Browse through our locations",
+    current: "pg-gallery"});
 });
 
 // Subscribe end-point
@@ -61,7 +67,10 @@ app.get('/gallery/:id', (req, res) => {
       res.send('Could not find ID');
     }
     else {
-      res.render('pages/gallery-item');
+      res.render('pages/gallery-item', {
+        title: "Location", 
+        tagline: "Take a closer look",
+        current: "pg-location"});
       console.log(req);
     }
   });  
@@ -69,7 +78,10 @@ app.get('/gallery/:id', (req, res) => {
 
 // Admin end-point
 app.get('/admin', (req, res) => {
-  res.render('pages/admin');
+  res.render('pages/admin', {
+    title: "Subscribers", 
+    tagline: "List of subscribers",
+    current: "pg-admin"});
 });
 
 // Team end-point

@@ -5,6 +5,7 @@
 ## [Heroku App Link]()  
 ## JSON GET Endpoints
 [/api/v0/gallery]()  
+[/api/v0/gallery/:id]()  
 [/api/v0/subscribers]()  
 [/api/v0/members]()
 

@@ -1,0 +1,179 @@
+/* Resets */
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  background-color: lightgrey;
+
+  border-bottom: 1px solid grey;
+
+  height: 8vh;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.svg {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  margin: auto auto auto 1rem;
+  gap: .35rem;
+}
+
+.logo .far {
+  /* Move icon up a little */
+  margin-bottom: 6px;  
+}
+
+.logo * {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+
+  gap: 1rem;
+  margin: auto 2rem auto auto;
+}
+
+nav ul li {
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+
+/* Make Location nav menu option dissapear on every page */
+nav .menu li:nth-child(3) {
+  display: none;
+}
+
+/* Bring it back in on the actual location page */
+.pg-location .menu li:nth-child(3) {
+  display: flex;
+}
+
+/* Responsive Navigation */
+@media (orientation: portrait) { 
+  /* Hamburger */
+  .svg {
+    display: flex;
+
+    height: 50px;
+    width: 50px;
+
+    margin: 10px 20px;
+  }
+
+  .svg:hover {
+    cursor: pointer;
+  }
+
+  svg.transform .top, svg.transform .bottom {
+    opacity: 0;
+    transition: opacity 300ms ease;
+  }
+  
+  /* So it transitions comming back */
+  .top, .bottom {
+    transition: all 300ms ease;
+  }
+  
+  /* Rotate the two middle bars so they form an x symbol */
+  svg.transform .middle1 {
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: transform 300ms ease;
+  }
+  
+  svg.transform .middle2 {
+    transform: rotate(-45deg);
+    transform-origin: center;
+    transition: transform 300ms ease;
+  }
+  
+  /* So they transition in the opposite direction */
+  .middle1, .middle2 {
+    transition: all 300ms ease;
+  }
+
+  /* Navigation */
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    
+    height: 35vh;
+
+    transition: height .15s ease;
+
+    position: sticky;
+
+    width: 100%;
+  }
+
+  /* Transition back in the opposite direction */
+  .nav {
+    transition: all .15s ease;
+  }
+
+  nav .logo {
+    display: none;
+  }
+
+  nav .menu {
+    display: block;
+
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+  }
+  
+  /* Using multiple selectors here to avoid specificity issues */
+  body nav .menu-toggle {
+    display: block;
+
+    text-align: center;
+
+    padding: 0;
+    margin: auto;
+    visibility: visible;
+    opacity: 1;
+
+    transition: visibility .18s ease;
+  }
+
+  /* Transition back in the opposite direction */
+  nav .menu {
+    transition: visibility .2s, opacity .1s ease;
+  }
+
+  /* Menu Items */
+  /* I am being 'tedious' with the borders here as i dont want to 'double-up' on borders so some do not appear thicker than others */
+  .nav li, .nav {
+    border-top: 1px solid black;
+    font-size: 20px;
+
+    width: 100vw;
+  }
+
+  /* Last menu item */
+  .nav li:nth-child(6) {
+    border-bottom: 1px solid black;
+  }
+
+  /* Center Location menu option */
+  .pg-location .menu li:nth-child(3) {
+    justify-content: center;
+  }
+}

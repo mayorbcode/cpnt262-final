@@ -1,14 +1,12 @@
-// Import custom module
-// import { ham } from './hamburger.js';
 
 // Declare and assign variables 
 const url = window.location.href;
 const params = url.split('/');
-let id = params[4];
+const id = params[4];
 console.log(id);
 
 // Asynchronous gallery-item fetch
-fetch(`${window.location.origin}/api/v0/gallery/${id}`)
+export const locations = fetch(`${window.location.origin}/api/v0/gallery/${id}`)
   .then((response) => {
     // JSON returned from server
     // We need to convert it into a Javascript object
@@ -34,3 +32,4 @@ fetch(`${window.location.origin}/api/v0/gallery/${id}`)
   .catch((error) => {
     console.log('Oooooooops!');
   });
+
