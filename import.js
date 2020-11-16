@@ -43,7 +43,7 @@ Gallery.insertMany(dbGallerySeed, (error, member) => {
 //   mongoose.connection.close();
 // });
 
-// Create/insert subscribers
+//Create/insert subscribers
 // Subscriber.insertMany(dbSubscriberSeed, (error, subscriber) => {
 //   console.log('Data import completed.')
 //   mongoose.connection.close();

@@ -6,10 +6,79 @@
   <title>Team</title>
   <link rel="stylesheet" href="css/team.css">
   <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+  <!-- JS link -->
+  <script type="module" src="/js/client.js"></script>
 </head>
 
-<body>
+<body class=<%= current %>>
+  <!-- Navigation -->
+  <%- include('../partials/nav'); %>
+  
   <!-- Header -->
   <%- include('../partials/header'); %>
+
+  <!--Main-->
+  <main>       
+    <section class="container">
+      <!--Card for Pat-->
+      <div class="card-container">
+        <div class="card">
+        <img src="images/team/Pat.jpg" alt="Patrick Bello">
+        </div>
+        <figure class="profile"> 
+          <h2>Patrick Bello</h2>
+          <p>Captain of our team.Manage Index & Admin pages, Server file, database & corresponding models and seeds files.</p>
+        </figure>
+        <figcaption class="icons">
+          <ul>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </figcaption>
+      </div>
+
+      <!--Card for Nhat-->
+      <div class="card-container">
+        <div class="card">
+        <img src="images/team/Nhat.jpg" alt="Nhat Nguyen">
+        </div>
+        <figure class="profile"> 
+          <h2>Nhat Nguyen</h2>
+          <p>Mainly responsible for picture optimization, manage Gallery & Gallery-item pages, UI, frontend CSS and JS Support.</p>
+        </figure>
+        <figcaption class="icons">
+          <ul>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </figcaption>
+      </div>
+
+      <!--Card for Lynn-->    
+      <div class="card-container">
+        <div class="card">
+        <img src="images/team/Lynn.jpg" alt="Lynn Chen">
+        </div>
+        <figure class="profile"> 
+          <h2>Lynn Chen</h2>
+          <p>Mainly responsible for Subscribe & team these two pages, and manage their frontend CSS and JS support.</p>
+        </figure>
+        <figcaption class="icons">
+          <ul>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </figcaption>
+      </div>
+
+    </section>
+  </main>
 </body>
 </html>
+
+

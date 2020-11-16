@@ -1,19 +1,86 @@
-/* hero section (for all pages)*/
-.hero {
-  display: flex;
-  min-height: 93vh;
-  
-  background-image: url(../images/stadium.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+/* form style*/
+fieldset {
+  border: 1;
 }
 
-.hero h1 {
-  margin: auto;
+form {
+  font-size: 20px;
+  padding-left: 3ch;
 
-  font-size: 5rem;
-  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  
+  width: 50ch;
+}
 
+input {
+  border: 1px solid black;
+}
+
+/* Form style */
+.formtitle {
+  font-weight: bold;
+  font-size: 28px;
+
+  padding-top: 0;
+}
+
+
+/* Textfields */
+.text-fields p {
+  display: flex;
+
+  font-size: 16px;
+  padding-top: 1rem;
+  
   color: black;
+}
+
+.text-fields p label {
+  width: 10ch;
+}
+
+.text-fields p input {
+  flex: 1;
+
+  max-width:30ch; 
+  height: 2rem;
+
+  margin-left: 5rem;
+  margin-left: 5rem;
+}
+
+ul{
+  list-style-type: none;
+}
+
+/* button */
+.formfooter {
+  text-align: center;
+}
+
+button {
+  font-size: 16px;
+  
+  background-color: rgb(100, 219, 255);
+  color: black;
+
+  width: 100px;
+  height: 40px;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem; 
+
+  border-radius: 2rem;
+
+}
+
+button:hover {
+  background-color: rgb(0, 132, 255);
+}
+
+button:active { 
+  background-color: grey;
 }
