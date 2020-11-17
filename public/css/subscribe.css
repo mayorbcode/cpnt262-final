@@ -1,6 +1,7 @@
 /* form style*/
 fieldset {
   border: 1;
+  border-radius: 1rem;
 }
 
 form {
@@ -13,6 +14,8 @@ form {
   margin-right: auto;
   
   width: 50ch;
+
+  text-align: center;
 }
 
 input {
@@ -20,20 +23,21 @@ input {
 }
 
 /* Form style */
-.formtitle {
+legend {
   font-weight: bold;
   font-size: 28px;
 
-  padding-top: 0;
+  padding-bottom: 10px;
 }
+
 
 
 /* Textfields */
 .text-fields p {
   display: flex;
 
-  font-size: 16px;
-  padding-top: 1rem;
+  font-size: 22px;
+  padding-top: 0.5rem;
   
   color: black;
 }
@@ -47,14 +51,12 @@ input {
 
   max-width:30ch; 
   height: 2rem;
-
-  margin-left: 5rem;
-  margin-left: 5rem;
 }
 
 ul{
   list-style-type: none;
 }
+
 
 /* button */
 .formfooter {
@@ -73,10 +75,11 @@ button {
   margin-top: 1rem;
   margin-bottom: 1rem; 
 
-  border-radius: 2rem;
-
+  border-radius: 1rem;
 }
 
+
+/* button behavior */
 button:hover {
   background-color: rgb(0, 132, 255);
 }

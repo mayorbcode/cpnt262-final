@@ -184,7 +184,7 @@ nav .menu li:nth-child(3) {
 /* Header - hero section (for all pages)*/
 .hero {
   display: flex;
-  min-height: 90vh;
+  min-height: 93vh;
   
   background-image: url(../images/borabora.jpg);
   background-attachment: fixed;
@@ -198,7 +198,7 @@ nav .menu li:nth-child(3) {
   font-size: 6rem;
   text-align: center;
 
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 
-  text-shadow: 2px 3px 1px rgb(255, 255, 255);
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }

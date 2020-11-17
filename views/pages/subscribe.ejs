@@ -24,25 +24,26 @@
       <form action="/subscribers" method="post" class="form">
         <fieldset>
           <legend>Newsletter Subscribe</legend>
-            <p>
-            <label for="name">Name: <abbr title="required" aria-label="required"><span class="required">*</span></abbr>
-            </label>
-            <input id="name" type="text" name="usersName" placeholder="What is your name?" required>
-            </p>
+            <div class="text-fields">  
+              <p>
+                <label for="name">Name: <abbr title="required" aria-label="required"><span class="required">*</span></abbr>
+                </label>
+                <input id="name" type="text" name="usersName" placeholder="What is your name?" required>
+              </p>
 
-            <p>
-            <label for="email">Email:<abbr title="required" aria-label="required"><span class="required">*</span></abbr>
-            </label> 
-            <input type="email" id="email" name="email"  placeholder="Please enter an Email" required>
-            </p>
+              <p>
+                <label for="email">Email:<abbr title="required" aria-label="required"><span class="required">*</span></abbr>
+                </label> 
+                <input type="email" id="email" name="email"  placeholder="Please enter an Email" required>
+              </p>
 
-            <ul>
-              <li>
-              <input type="checkbox" id="receive" name="Receice" value="yes">
-              <label for="receive">I would like to recieve promotional emails</label>
-              </li>
-            </ul>
-
+              <ul>
+                <li>
+                <input type="checkbox" id="receive" name="Receice" value="yes">
+                <label for="receive">I'd like to recieve promotional emails</label>
+                </li>
+              </ul>
+            </div>
 
             <div class="formfooter">
               <button class="subscribe" type="submit">Subscribe</button>
