@@ -134,7 +134,7 @@ app.get('/api/v0/subscribers', (req, res) => {
   });
 });
 
-// Members
+// Members. We are a group of 3 but i just made this JSON endpoint regardless even if we're not fetching from it
 app.get('/api/v0/members', (req, res) => {
   Members.find((err, data) => {
     if (err || data.length===0) {
