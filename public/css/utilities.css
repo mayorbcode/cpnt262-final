@@ -12,8 +12,10 @@ nav {
   display: flex;
   height: 8vh;
 
-  /* background-color: lightgrey;
-  border-bottom: 1px solid grey; */
+  /* background: -webkit-linear-gradient(#00203FFF, rgb(141, 255, 204));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  
 
 
   font-family: 'Roboto', sans-serif;
