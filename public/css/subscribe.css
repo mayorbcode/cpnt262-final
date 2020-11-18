@@ -28,6 +28,8 @@ legend {
   font-size: 28px;
 
   padding-bottom: 10px;
+
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 
@@ -40,6 +42,8 @@ legend {
   padding-top: 0.5rem;
   
   color: black;
+
+  font-family: 'Open Sans', sans-serif;
 }
 
 .text-fields p label {
