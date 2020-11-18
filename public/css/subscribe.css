@@ -66,8 +66,8 @@ ul{
 button {
   font-size: 16px;
   
-  background-color: rgb(100, 219, 255);
-  color: black;
+  background-color:rgb(56, 56, 56);
+  color: white;
 
   width: 100px;
   height: 40px;
@@ -81,7 +81,7 @@ button {
 
 /* button behavior */
 button:hover {
-  background-color: rgb(0, 132, 255);
+  background-color: rgb(255, 166, 0);
 }
 
 button:active { 
