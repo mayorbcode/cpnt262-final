@@ -152,10 +152,10 @@ app.post('/subscribers', (req, res) => {
   console.log(req.body);
   subscriber.save(error => {
     if (error) {
-      res.status(500).send.length(error)
+      res.status(500).send(error);
     }
     else {
-      res.status(200).send(`<p>Thanks, ${req.body.usersName}! We'll send copies of our newsletters to ${req.body.email}.</p>`);
+      res.status(200).send(`<p>Thanks, ${req.body.usersName}! We'll send subscriber updates to ${req.body.email}.</p>`);
     }
   });  
 });

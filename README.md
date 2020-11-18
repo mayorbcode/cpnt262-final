@@ -2,16 +2,16 @@
 
 ## Group Name - TOUR GUIDES
 
-## [Heroku App Link]()  
+## [Heroku App Link](https://cpnt-262-final.herokuapp.com/)  
 ## JSON GET Endpoints
-[/api/v0/gallery]()  
-[/api/v0/gallery/:id]()  
-[/api/v0/subscribers]()  
-[/api/v0/members]()
+[/api/v0/gallery](https://cpnt-262-final.herokuapp.com/api/v0/gallery)  
+[/api/v0/gallery/:id](https://cpnt-262-final.herokuapp.com/api/v0/gallery/1)  
+[/api/v0/subscribers](https://cpnt-262-final.herokuapp.com/api/v0/subscribers)  
+[/api/v0/members](https://cpnt-262-final.herokuapp.com/api/v0/members)
 
-## Attributions  
-Images from []()    
+## Attributions    
 [Tony's in-class demo](https://github.com/sait-wbdv/belly-pajamas)  
+[Tony's hamburger menu tutorial](https://github.com/sait-wbdv/sample-code/tree/master/frontend/hamburger-toggle)  
 
 ## Collaborators  
 [Patrick Bello](https://github.com/mayorbcode)  
@@ -48,7 +48,7 @@ Images from []()
 5. A subscribe page where potential clients can leave their information where they will be contacted
 6. An admin page which shows a list of our subscribers
 
-### Images used:
+## Images
 - [Japan](https://unsplash.com/photos/E_eWwM29wfU) by [Su San Lee](https://unsplash.com/@blackodc) 
 - [Singapore](https://unsplash.com/photos/mfBFoA6l7DY) by [Yeo Khee](https://unsplash.com/@yokeboy)
 - [Seoul](https://www.pexels.com/photo/aerial-shot-of-city-1637788/) by [Marius Mann](https://www.pexels.com/@marius-mann-772581)  
@@ -62,3 +62,6 @@ Images from []()
 - [Caribbean](https://www.pexels.com/photo/beach-bungalow-caribbean-jetty-237272/) by [Pixabay](https://www.pexels.com/@pixabay)
 - [Vietnam](https://www.pexels.com/photo/vietnam-halong-bay-58597/) by [foc foodoncam](https://www.pexels.com/@foodoncam)
 - [Bora Bora](https://wallpaperaccess.com/bora-bora-windows) from [Wallpaper Access](https://wallpaperaccess.com/)
+
+## License
+[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)  
