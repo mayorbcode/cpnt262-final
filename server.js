@@ -71,7 +71,6 @@ app.get('/gallery/:id', (req, res) => {
         title: "Location", 
         tagline: "Take a closer look",
         current: "pg-location"});
-      console.log(req);
     }
   });  
 });
@@ -112,10 +111,8 @@ app.get('/api/v0/gallery/:id', (req, res) => {
   Galleries.find({id: req.params.id}, (err,data) => {
     if (err || data.length===0) {
       res.send('Could not find ID');
-      console.log(err);
     }
     else {
-      console.log(data);
       res.json(data);
     }
   });  
@@ -129,7 +126,6 @@ app.get('/api/v0/subscribers', (req, res) => {
     }
     else {
       res.json(data);
-      console.log(data);
     }
   });
 });
@@ -149,7 +145,6 @@ app.get('/api/v0/members', (req, res) => {
 // Do something with form data
 app.post('/subscribers', (req, res) => {
   const subscriber = new Subscribers(req.body);
-  console.log(req.body);
   subscriber.save(error => {
     if (error) {
       res.status(500).send(error);
