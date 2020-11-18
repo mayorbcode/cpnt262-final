@@ -80,7 +80,7 @@ app.get('/gallery/:id', (req, res) => {
 app.get('/admin', (req, res) => {
   res.render('pages/admin', {
     title: "Subscribers", 
-    tagline: "List of subscribers",
+    tagline: "Our subscribers",
     current: "pg-admin"});
 });
 
@@ -148,7 +148,16 @@ app.get('/api/v0/members', (req, res) => {
 
 // Do something with form data
 app.post('/subscribers', (req, res) => {
-  res.send(`<p>Thanks, ${req.body.usersName}! We'll send copies of our newsletters to ${req.body.email}.</p>`);
+  const subscriber = new Subscribers(req.body);
+  console.log(req.body);
+  subscriber.save(error => {
+    if (error) {
+      res.status(500).send.length(error)
+    }
+    else {
+      res.status(200).send(`<p>Thanks, ${req.body.usersName}! We'll send copies of our newsletters to ${req.body.email}.</p>`);
+    }
+  });  
 });
 
 // Return 404 when/if file is not found

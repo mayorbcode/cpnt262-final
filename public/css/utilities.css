@@ -29,7 +29,7 @@ nav a {
   display: flex;
   align-items: center;
 
-  margin: auto auto auto 1rem;
+  margin-left: 1rem;
   gap: .35rem;
 }
 
@@ -73,7 +73,7 @@ nav .menu li:nth-child(3) {
     height: 50px;
     width: 50px;
 
-    margin: 10px 20px;
+    margin: auto 20px;
   }
 
   .svg:hover {
@@ -113,7 +113,7 @@ nav .menu li:nth-child(3) {
     display: flex;
     flex-direction: column;
     
-    height: 35vh;
+    height: 40vh;
 
     transition: height .15s ease;
 
@@ -201,4 +201,16 @@ nav .menu li:nth-child(3) {
   color: rgb(255, 255, 255);
 
   text-shadow: 5px 5px 5px  rgb(0, 132, 255);
+}
+
+/* Media query */
+@media (orientation: portrait) {
+  .hero {
+    /* Parralax doesn't work on mobile */
+    background-attachment: scroll;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
 }

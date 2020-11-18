@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Subscribe</title>
+  <!-- Font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <!-- css links -->
   <link rel="stylesheet" href="css/subscribe.css">
   <link rel="stylesheet" href="css/utilities.css">
-
   <!-- JS link -->
   <script type="module" src="/js/client.js"></script>
 </head>
-
 <body class=<%= current %>>
-  
-  <!-- Navigation -->
+   <!-- Navigation -->
   <%- include('../partials/nav'); %>
   
   <!-- Header -->
@@ -30,13 +30,11 @@
                 </label>
                 <input id="name" type="text" name="usersName" placeholder="What is your name?" required>
               </p>
-
               <p>
                 <label for="email">Email:<abbr title="required" aria-label="required"><span class="required">*</span></abbr>
                 </label> 
                 <input type="email" id="email" name="email"  placeholder="Please enter an Email" required>
               </p>
-
               <ul>
                 <li>
                 <input type="checkbox" id="receive" name="Receice" value="yes">
@@ -44,19 +42,11 @@
                 </li>
               </ul>
             </div>
-
             <div class="formfooter">
               <button class="subscribe" type="submit">Subscribe</button>
             </div>
-            
-
         </fieldset>
       </form>
     </section>
-
-
-
-
-
 </body>
 </html>

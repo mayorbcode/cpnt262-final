@@ -87,3 +87,12 @@ button:hover {
 button:active { 
   background-color: grey;
 }
+
+/* Media Query */
+@media (orientation: portrait) {
+  .form {
+    /* Make form span width of device at most */
+    max-width: 100vw;
+    padding: 0;
+  }
+}

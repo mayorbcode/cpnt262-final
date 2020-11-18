@@ -1,0 +1,33 @@
+.main-text {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto 5rem;
+}
+
+.main-text p {
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.2rem;
+
+  margin: auto 2rem;
+  
+  max-width: 1200px;
+}
+
+@media (orientation: portrait) {
+    /* Page long-form text */
+    .main-text {
+      /* Center in the x-axis and make a little space between top & bottom sections  */
+      margin: 2rem auto;
+    }
+  
+    .main-text p {
+      line-height: 2.5rem;
+      margin: 2rem 1rem;
+    }
+}

@@ -1,7 +1,3 @@
-// Import custom module
-// import { ham } from './hamburger.js';
-
-
 // Asynchronous gallery fetch
 export const gallery = fetch(`${window.location.origin}/api/v0/gallery`)
   .then((response) => {
