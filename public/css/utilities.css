@@ -31,7 +31,7 @@ nav a {
 .logo {
   display: flex;
   align-items: center;
-  
+
   margin-left: 1rem;
   gap: .35rem;
 }
@@ -220,8 +220,8 @@ nav .menu li:nth-child(3) {
 }
 
 /* Nhat's footer (please change anything you'd like) */
-footer {
-  font-size: clamp(1rem, 3vw, 1.5rem);
+footer, footer a {
+  font-size: clamp(1.2rem, 3vw, 1.3rem);
   font-family: 'Open Sans', sans-serif;
   margin-top: 1rem;
   margin-bottom: -.5rem;
