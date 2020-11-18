@@ -62,6 +62,7 @@
 - [Caribbean](https://www.pexels.com/photo/beach-bungalow-caribbean-jetty-237272/) by [Pixabay](https://www.pexels.com/@pixabay)
 - [Vietnam](https://www.pexels.com/photo/vietnam-halong-bay-58597/) by [foc foodoncam](https://www.pexels.com/@foodoncam)
 - [Bora Bora](https://wallpaperaccess.com/bora-bora-windows) from [Wallpaper Access](https://wallpaperaccess.com/)
+- [World Map](https://www.pexels.com/photo/beige-analog-gauge-697662/) by [Ylanite Koppens](https://www.instagram.com/nietjuh78/)
 
 ## License
 [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)  
