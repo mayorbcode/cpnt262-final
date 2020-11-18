@@ -40,7 +40,7 @@ db.once('open', function() {
 app.get('/', (req, res) => {
   res.render('pages/index', {
     title: "Home", 
-    tagline: "Welcome to Tour Guides",
+    tagline: "Welcome To Happy Travel",
     current: "pg-index"});
 });
 
@@ -48,7 +48,7 @@ app.get('/', (req, res) => {
 app.get('/gallery', (req, res) => {
   res.render('pages/gallery', {
     title: "Gallery", 
-    tagline: "Browse through our destinations",
+    tagline: "Browse Through Our Destinations",
     current: "pg-gallery"});
 });
 
@@ -56,7 +56,7 @@ app.get('/gallery', (req, res) => {
 app.get('/subscribe', (req, res) => {
   res.render('pages/subscribe', {
     title: "Subscribe - TOUR GUIDES", 
-    tagline: "Sign-up to our newsletter",
+    tagline: "Sign-up To Our Newsletter",
     current: "pg-subscribe"});
 });
 
@@ -69,7 +69,7 @@ app.get('/gallery/:id', (req, res) => {
     else {
       res.render('pages/gallery-item', {
         title: "Location", 
-        tagline: "Take a closer look",
+        tagline: "Take A Closer Look",
         current: "pg-location"});
       console.log(req);
     }
@@ -80,7 +80,7 @@ app.get('/gallery/:id', (req, res) => {
 app.get('/admin', (req, res) => {
   res.render('pages/admin', {
     title: "Subscribers", 
-    tagline: "Our subscribers",
+    tagline: "Our Subscribers",
     current: "pg-admin"});
 });
 
@@ -88,7 +88,7 @@ app.get('/admin', (req, res) => {
 app.get('/team', (req, res) => {
   res.render('pages/team', {
     title: "Team - TOUR GUIDES", 
-    tagline: "Meet our team",
+    tagline: "Meet The Team",
     current: "pg-team"})
 });
 
