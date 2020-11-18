@@ -34,3 +34,8 @@ figcaption h2 {
   color: rgb(231, 139, 53);
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+.gallery a {
+  /* remove underline */
+  text-decoration: none;
+}
