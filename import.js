@@ -28,14 +28,13 @@ db.on('error', function(error){
 
 db.once('open', function() {
   console.log('Connected to DB...');
-
 });
 
 // Create/insert Gallery
-// Gallery.insertMany(dbGallerySeed, (error, member) => {
-//   console.log('Data import completed.')
-//   mongoose.connection.close();
-// });
+Gallery.insertMany(dbGallerySeed, (error, member) => {
+  console.log('Data import completed.')
+  mongoose.connection.close();
+});
 
 // Create/insert members
 // Member.insertMany(dbMemberSeed, (error, member) => {
@@ -44,7 +43,7 @@ db.once('open', function() {
 // });
 
 //Create/insert subscribers
-Subscriber.insertMany(dbSubscriberSeed, (error, subscriber) => {
-  console.log('Data import completed.')
-  mongoose.connection.close();
-});
+// Subscriber.insertMany(dbSubscriberSeed, (error, subscriber) => {
+//   console.log('Data import completed.')
+//   mongoose.connection.close();
+// });
