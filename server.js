@@ -48,7 +48,7 @@ app.get('/', (req, res) => {
 app.get('/gallery', (req, res) => {
   res.render('pages/gallery', {
     title: "Gallery", 
-    tagline: "Browse through our locations",
+    tagline: "Browse through our destinations",
     current: "pg-gallery"});
 });
 
