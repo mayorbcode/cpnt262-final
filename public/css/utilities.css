@@ -231,3 +231,8 @@ footer {
 
   color: rgb(56, 56, 56);
 }
+
+/* Current page nav menu decoration */
+.pg-index .nav .logo, .pg-index .nav .menu li:first-child, .pg-gallery .nav .menu li:nth-child(2), .pg-location .nav .menu li:nth-child(3), .pg-subscribe .nav .menu li:nth-child(4), .pg-team .nav .menu li:nth-child(5), .pg-admin .nav .menu li:nth-child(6) {
+  text-decoration: underline;
+}

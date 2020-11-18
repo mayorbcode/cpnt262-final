@@ -57,7 +57,7 @@ app.get('/subscribe', (req, res) => {
   res.render('pages/subscribe', {
     title: "Subscribe - TOUR GUIDES", 
     tagline: "Sign-up to our newsletter",
-    current: "subscribe"})
+    current: "pg-subscribe"});
 });
 
 // Gallery-item end-point
@@ -89,7 +89,7 @@ app.get('/team', (req, res) => {
   res.render('pages/team', {
     title: "Team - TOUR GUIDES", 
     tagline: "Meet our team",
-    current: "team"})
+    current: "pg-team"})
 });
 
 
