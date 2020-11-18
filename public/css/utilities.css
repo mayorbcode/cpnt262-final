@@ -33,7 +33,7 @@ nav a {
   gap: .35rem;
 }
 
-.logo .far {
+.logo .fas {
   /* Move icon up a little */
   margin-bottom: 6px;  
 }
