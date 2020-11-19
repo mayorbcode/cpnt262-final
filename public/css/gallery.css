@@ -30,11 +30,13 @@
   cursor: pointer;
 }
 
+/* Make figcaption on gallery pretty */
 figcaption h2 {
   color: rgb(231, 139, 53);
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+/* Add hover effect to figcaption */
 figcaption h2:hover {
   color: rgb(70, 70, 70);
 }
