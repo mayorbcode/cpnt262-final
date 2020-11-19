@@ -35,6 +35,10 @@ figcaption h2 {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+figcaption h2:hover {
+  color: rgb(70, 70, 70);
+}
+
 .gallery a {
   /* remove underline */
   text-decoration: none;

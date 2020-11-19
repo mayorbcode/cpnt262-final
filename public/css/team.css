@@ -10,14 +10,14 @@
   min-width: 30ch;
   max-width: 40ch;
 
-  border: 1px solid grey;
-  border-radius: 1em;
+  border-radius: 5px;
   padding: 1em;
   
   display: flex;
   flex-direction: column;
 
   background-color: rgb(231, 139, 53);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
 }
 
 img {
@@ -28,11 +28,13 @@ img {
 .profile h2 {
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
+  color: rgb(65, 65, 65);
 }
   
 .profile p {
   /* text-align: center; */
   font-family: 'Open Sans', sans-serif;
+  color: rgb(75, 75, 75);
 
   font-size: 1.2rem;
 }
@@ -43,10 +45,15 @@ img {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
   
-  color: rgb(0, 0, 0);
+  color: white;
 	text-decoration: none;
 
 	padding: 0.5em;
+}
+
+/* social media icon hover */
+.icons a:hover {
+  color: rgb(65, 65, 65);
 }
 
 .icons .fab {

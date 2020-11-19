@@ -26,6 +26,10 @@ nav a {
   color: rgb(231, 139, 53);
 }
 
+nav a:hover {
+  color: rgb(70, 70, 70);
+}
+
 .svg {
   display: none;
 }
@@ -221,7 +225,7 @@ nav .menu li:nth-child(3) {
   }
 }
 
-/* Nhat's footer (please change anything you'd like) */
+/* Make footer pretty */
 footer, footer a {
   font-size: clamp(1.2rem, 3vw, 1.3rem);
   font-family: 'Open Sans', sans-serif;
@@ -233,6 +237,11 @@ footer, footer a {
   position: relative;
 
   color: rgb(56, 56, 56);
+}
+
+/* Make licenced logo change color on hover */
+footer a:hover {
+  color: rgb(231, 139, 53);
 }
 
 /* Current page nav menu decoration */
