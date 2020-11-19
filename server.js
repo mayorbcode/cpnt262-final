@@ -40,7 +40,7 @@ db.once('open', function() {
 app.get('/', (req, res) => {
   res.render('pages/index', {
     title: "Home", 
-    tagline: "Welcome To Happy Travel",
+    tagline: "Welcome to Happy Travel",
     current: "pg-index"});
 });
 
@@ -56,7 +56,7 @@ app.get('/gallery', (req, res) => {
 app.get('/subscribe', (req, res) => {
   res.render('pages/subscribe', {
     title: "Subscribe - TOUR GUIDES", 
-    tagline: "Sign-up To Our Newsletter",
+    tagline: "Sign-up for our Newsletter",
     current: "pg-subscribe"});
 });
 
@@ -69,7 +69,7 @@ app.get('/gallery/:id', (req, res) => {
     else {
       res.render('pages/gallery-item', {
         title: "Location", 
-        tagline: "Take A Closer Look",
+        tagline: "Take a Closer Look",
         current: "pg-location"});
     }
   });  
@@ -87,7 +87,7 @@ app.get('/admin', (req, res) => {
 app.get('/team', (req, res) => {
   res.render('pages/team', {
     title: "Team - TOUR GUIDES", 
-    tagline: "Meet The Team",
+    tagline: "Meet the Team",
     current: "pg-team"})
 });
 

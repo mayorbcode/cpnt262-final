@@ -12,18 +12,15 @@ nav {
   display: flex;
   height: 8vh;
 
-  /* background: -webkit-linear-gradient(#00203FFF, rgb(141, 255, 204));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  
-
-
   font-family: 'Roboto', sans-serif;
+  font-variant: small-caps;
+ 
 }
 
 nav a {
   text-decoration: none;
   color: rgb(231, 139, 53);
+  font-size: 2rem;
 }
 
 nav a:hover {
