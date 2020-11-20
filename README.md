@@ -2,6 +2,7 @@
 
 ## Group Name - Happy Travel
 
+## [Github Repo](https://github.com/mayorbcode/cpnt262-final)  
 ## [Heroku App Link](https://cpnt-262-final.herokuapp.com/)  
 ## JSON GET Endpoints
 [/api/v0/gallery](https://cpnt-262-final.herokuapp.com/api/v0/gallery)  
