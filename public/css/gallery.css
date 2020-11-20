@@ -45,3 +45,10 @@ figcaption h2:hover {
   /* remove underline */
   text-decoration: none;
 }
+
+@media (orientation: portrait) {
+  .card img {
+    width: 80vmin;
+    height: auto;
+  }
+}
