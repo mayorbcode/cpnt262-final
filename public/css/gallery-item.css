@@ -46,7 +46,7 @@ body {
 @media (orientation: portrait) {
   .item-card {
     min-width: 90vw;
-    min-height: 90vh;
+    min-height: 85vh;
 
     margin-bottom: 1rem;
   }
