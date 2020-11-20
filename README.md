@@ -1,6 +1,6 @@
 # CPNT-262 FINAL PROJECT - Deployed Product/Services Website  
 
-## Group Name - TOUR GUIDES
+## Group Name - Happy Travel
 
 ## [Heroku App Link](https://cpnt-262-final.herokuapp.com/)  
 ## JSON GET Endpoints
@@ -43,7 +43,7 @@
 &nbsp;&nbsp;The website consists of;
 1. A home Page
 2. A gallery which displays images of our various service locations
-3. A gallery-item page which gives a brief insight as to what to expect from the selected location
+3. A gallery-item page which shows the location in more detail
 4. A team page which displays our management team members
 5. A subscribe page where potential clients can leave their information where they will be contacted
 6. An admin page which shows a list of our subscribers
