@@ -1,10 +1,11 @@
-/* card style*/
+/* Make the container a flexbox */
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+/* Give dimensions to the card-container */
 .card-container {
   margin: 1em auto;
   min-width: 30ch;
@@ -20,22 +21,23 @@
   box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
 }
 
+/* image width and padding */
 img {
   width: 100%;
   padding-bottom: 1em;
 }
 
+/* style the profile header */
 .profile h2 {
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
   color: white;
 }
   
+/* style the profile p tag */
 .profile p {
-  /* text-align: center; */
   font-family: 'Open Sans', sans-serif;
   color:white;
-
   font-size: 1.2rem;
 }
   

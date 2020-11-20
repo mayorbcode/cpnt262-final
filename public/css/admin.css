@@ -2,6 +2,9 @@
 .admin-main-wrapper h1 {
   text-align: center;
   font-size: 50px;
+
+  color: rgb(231, 139, 53);
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* Card gallery wrapper */
@@ -20,7 +23,7 @@
   flex-direction: column;
   
   border: 1px solid grey;
-  border-radius: 15px;
+  border-radius: 5px;
   margin: 20px;
   
   width: 450px;
@@ -30,5 +33,12 @@
 /* Text within cards */
 .subscriber-card p {
   font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
   margin: auto 15px;
+}
+
+/* Make the subscriber list pretty */
+.subscriber-card p span {
+  color: rgb(231, 139, 53);
+  font-family: 'Roboto Condensed', sans-serif;
 }

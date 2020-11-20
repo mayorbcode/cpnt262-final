@@ -20,7 +20,7 @@ export const locations = fetch(`${window.location.origin}/api/v0/gallery/${id}`)
       output = `
         <figure class="item-card">
           <figcaption>
-            <h2>${item.description}</h2>
+            <h2>${item.title}</h2>
           </figcaption>
           <img src=${item.imagePath} alt="Scenic image of place in ${item.description}">
         </figure>

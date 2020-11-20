@@ -12,8 +12,8 @@ export const subscribers = fetch(`${window.location.origin}/api/v0/subscribers`)
     subscribers.forEach((subscriber) => {
       output += `
         <div class="subscriber-card">
-          <p>Name: ${subscriber.usersName}</p>
-          <p>Email: ${subscriber.email}</p>
+          <p><span>Name:</span> ${subscriber.usersName}</p>
+          <p><span>Email:</span> ${subscriber.email}</p>
         </div>
       `;
     });

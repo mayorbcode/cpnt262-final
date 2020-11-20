@@ -1,6 +1,5 @@
+/* Main-text wrapper into flexbox */
 .main-text {
-  /* min-height: 100vh; */
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,19 +8,22 @@
   margin: auto 5rem;
 }
 
+/* Make h1 header pretty */
 .main-text h1 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 3rem;
   color: rgb(231, 139, 53);
 }
 
+/* Make h2 header pretty */
 .main-text h2 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 2.5rem;
   color: rgb(75, 75, 75);
 }
+
+/* Make p pretty */
 .main-text p {
-  /* text-align: center; */
   max-width: 1200px;
   line-height: 2rem;
   margin: auto 2rem;
@@ -30,6 +32,7 @@
   font-size: 1.2rem;
 }
 
+/* When in portrait view */
 @media (orientation: portrait) {
     /* Page long-form text */
     .main-text {

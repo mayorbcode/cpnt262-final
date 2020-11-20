@@ -30,7 +30,7 @@ db.once('open', function() {
   console.log('Connected to DB...');
 });
 
-// Database 'inserts' are commented out and each one is uncommented and run when we want to re-upload database.
+// *** Database 'inserts' are commented out and each one is uncommented and run when we want to re-upload database. ***
 
 // Create/insert Gallery
 // Gallery.insertMany(dbGallerySeed, (error, member) => {
