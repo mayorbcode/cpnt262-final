@@ -1,0 +1,34 @@
+.gallery-item {
+  display: flex;
+}
+
+.item-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: auto;
+
+  width: 90vw;
+  height: 70vh;
+}
+
+.item-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Sticky Footer */
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+@media (orientation: portrait) {
+  .item-card {
+    width: 100vw;
+    height: 90vh;
+  }
+}

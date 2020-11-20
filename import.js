@@ -30,11 +30,13 @@ db.once('open', function() {
   console.log('Connected to DB...');
 });
 
+// Database 'inserts' are commented out and each one is uncommented and run when we want to re-upload database.
+
 // Create/insert Gallery
-Gallery.insertMany(dbGallerySeed, (error, member) => {
-  console.log('Data import completed.')
-  mongoose.connection.close();
-});
+// Gallery.insertMany(dbGallerySeed, (error, member) => {
+//   console.log('Data import completed.')
+//   mongoose.connection.close();
+// });
 
 // Create/insert members
 // Member.insertMany(dbMemberSeed, (error, member) => {
